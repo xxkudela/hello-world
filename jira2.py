@@ -5,10 +5,10 @@ from jira import JIRA
 curdate = datetime.datetime.now()
 
 options = {
-    'server': 'http://jira.konts.lv'}
+    'server': 'http://jira.server'}
 jira = JIRA(options)
 url = 'http://jira.konts.lv'
-authed_jira = JIRA(options, basic_auth=('kudelale', 'London123'))
+authed_jira = JIRA(options, basic_auth=('username', 'password'))
 
 #boards = authed_jira.boards()
 #[print(board.name, 'board_id =', board.id) for board in boards]
